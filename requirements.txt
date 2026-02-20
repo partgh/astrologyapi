@@ -1,0 +1,5 @@
+pyswisseph
+fastapi
+uvicorn
+pydantic
+pytz

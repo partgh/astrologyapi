@@ -1,0 +1,8 @@
+===== RUNTIME VERIFICATION =====
+Working Directory: C:\Users\lenovo\Desktop\self made kundli engine
+Python Executable: C:\Users\lenovo\AppData\Local\Programs\Python\Python38\python.exe
+Swiss Library Path: C:\Users\lenovo\AppData\Local\Programs\Python\Python38\python.exe
+File Location: C:\Users\lenovo\Desktop\self made kundli engine\app\main.py
+================================
+ACTIVE SIDEREAL MODE: None
+INFO:     127.0.0.1:55406 - "POST /get_chart HTTP/1.1" 200 OK
