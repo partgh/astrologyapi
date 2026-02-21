@@ -34,7 +34,7 @@ def _safe_calc_ut(julian_day: float, planet_id: int, flags: int):
 
 
 def get_planetary_positions(julian_day: float, node_type: str = "true", precision: int = 4):
-    flags = swe.FLG_SWIEPH | swe.FLG_SIDEREAL | swe.FLG_SPEED
+    flags = swe.FLG_SIDEREAL | swe.FLG_SWIEPH
     positions = []
 
     for name, pid in PLANET_BASE_MAP.items():

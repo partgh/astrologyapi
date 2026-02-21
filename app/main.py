@@ -1,7 +1,3 @@
-import swisseph as swe
-
-swe.set_ephe_path("ephemeris")
-
 from fastapi import FastAPI
 from app.api import router
 

@@ -13,7 +13,7 @@ class ChartRequest(BaseModel):
     longitude: float
     node_type: Literal["true", "mean"] = "true"
     precision: Literal[2, 3, 4] = 4
-    house_system: Literal["placidus", "equal", "whole_sign"] = "placidus"
+    house_system: Literal["sripati", "ascendant_based"] = "ascendant_based"
     aspect_orb: float = 3.0
     include_node_special_aspects: bool = False
 
@@ -28,6 +28,7 @@ class PlanetPosition(BaseModel):
     id: int
     name: str
     longitude: float
+    rashi_number: int
     is_retrograde: bool
     speed: float
     nakshatra: Optional[NakshatraInfo] = None
@@ -53,6 +54,8 @@ class PlanetaryAspect(BaseModel):
     orb: float
 
 class ChartResponse(BaseModel):
+    ascendant_longitude: float
+    ascendant_rashi: int
     ascendant: float
     ayanamsa: float
     planets: List[PlanetPosition]

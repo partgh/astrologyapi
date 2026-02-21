@@ -6,6 +6,6 @@ from typing import Literal
 class EngineOptions:
     node_type: Literal["true", "mean"] = "true"
     precision: int = 4
-    house_system: Literal["placidus", "equal", "whole_sign"] = "placidus"
+    house_system: Literal["sripati", "ascendant_based"] = "ascendant_based"
     aspect_orb: float = 3.0
     include_node_special_aspects: bool = False
